@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <main>
+        <h1> Good Vibes Form.</h1>
+        <div class="container">
+            <p id="description"> Tell us something positive that happened to you today.</p>
+        
+        <form action="#" method="GET">
+            <div class="labels">
+                <label for="name">Name:</label>
+                
+                <input type="text" name="name" id="name"
+                 placeholder="Enter your name" required>
+            </div>
+            <div class="labels">
+                <label for="email">Email:</label>
+                
+                <input type="email" name="email" id="email"
+                placeholder="Enter your email" required>
+            </div>
+            <div class="labels">
+                <label for="number">On a scale of 1-10 how good was it?</label>
+                <br>
+                <input type="number" name="On a scale of 1-10 how good was it?" id="number"
+                min="1" max="10">
+            </div>
+            <div class="labels">
+                <label for="where did it happen">Where did it happen:</label>
+                
+                <select name="location" id="where did it happen">
+                    <option value="At home">At home</option>
+                    <option value="On my commute">On my commute</option>
+                    <option value="At work">At work</option>
+                    <option value="On the street">On the street</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div>
+                <h4>At what time of day did it happen?</h4>
+            </div>
+            <div class="labels">
+                <label for="morning">Morning</label>
+                <input type="radio" name="time-of-day" id="morning" value="morning">
+            </div>
+            <div class="labels">
+                <label for="afternoon">Afternoon</label>
+                <input type="radio" name="time-of-day" id="afternoon" value="afternoon">
+            </div>
+            <div class="labels">
+                <label for="evening">Evening</label>
+                <input type="radio" name="time-of-day" id="evening" value="evening">
+            </div>
+            <div>
+               <h4>what emotions did you experience?</h4>
+                
+                (select all that apply.)
+            </div>
+            <div class="labels">
+                <label for="excited">Excited</label>
+                <input type="checkbox" name="excited" id="excited">
+            </div>
+            <div class="labels">
+                <label for="humbled">Humbled</label>
+                <input type="checkbox" name="humbled" id="humbled">
+            </div>
+            <div class="labels">
+                <label for="elated">Elated</label>
+                <input type="checkbox" name="elated" id="elated">
+            </div>
+            <div class="labels">
+                <label for="loved">Loved</label>
+                <input type="checkbox" name="Loved" id="loved">
+            </div>
+            <div class="labels">
+                <label for="enthusiastic">Enthusiastic</label>
+                <input type="checkbox" name="enthusiastic" id="enthusiastic">
+            </div>
+            <div class="labels">
+                <label for="experience">
+                    <h4>Please describe your positive experience</h4> </label>
+                <br>
+                <textarea id="experience" name="experience" placeholder="enter your experience here..."></textarea>
+                </div> 
+                <button class="button" id="submit" type="submit">Submit</button>
+    </div>
+        </form>
+    </main>
+</body>
+</html>
